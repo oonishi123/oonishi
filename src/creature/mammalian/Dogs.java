@@ -34,24 +34,24 @@ public class Dogs extends Mammal {
 	/*------------------------------------------------------------------
      公開メソッド
 	------------------------------------------------------------------*/
-	
+
 	// 犬の呼吸方法についてコンソールに出力
 	@Override
 	public void breathe(){
 		System.out.println("イヌは" + this.breathe + "呼吸する");
 	}
-	
+
 	// 犬種数をコンソールに出力
 	@Override
 	public void species() {
 		System.out.println("イヌは" + this.species + "種いる");
 	}
-	
+
 	// 生まれ方をコンソールに出力
 	public void bear(){
 		System.out.println("イヌは" + this.bear + "である");
 	}
-	
+
 	// 生まれ方をコンソールに出力
 	public void temperature(){
 		System.out.println("イヌは舌を出すことで体温を調節している");
@@ -67,7 +67,7 @@ public class Dogs extends Mammal {
 			System.out.println(dogBreed + "は小型犬です" );
 		} else {
 		// そうでなければ
-			System.out.println();
+			System.out.println(dogBreed + "は大型犬です");
 		}
 	}
 }
