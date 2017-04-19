@@ -9,7 +9,7 @@
  */
 
 package creature;
-import creature.mammalian.Dogs;
+import creature.mammalian.Dog;
 import creature.mammalian.Kamonohashi;
 import creature.mammalian.Mammal;
 
@@ -23,22 +23,39 @@ class Creatures {
 
 	public static void main(String[] args){
 
+		/** インスタンス化 */
 		Mammal Mammal = new Mammal();
-		Dogs Dog = new Dogs();
-		Kamonohashi Kamo = new Kamonohashi();
+		Dog Dog = new Dog("おいぬさま");
+		Kamonohashi Kamo = new Kamonohashi("かもちゃん");
 
-
+		// Mammalの呼吸方法をコンソールに出力
 		Mammal.breathe();
+
+		// Mammalの種類をコンソールに出力
 		Mammal.species();
-		
+
+		// Kamoの呼吸方法をコンソールに出力
 		Kamo.breathe();
+
+		// Kamoの種類をコンソールに出力
 		Kamo.species();
+
+		// Kamoの生まれ方をコンソールに出力
 		Kamo.bear();
-		
+
+		// Dogの呼吸方法をコンソールに出力
 		Dog.breathe();
+
+		// Dogの種類をコンソールに出力
 		Dog.species();
+
+		// Dogの生まれ方をコンソールに出力
 		Dog.bear();
+
+		// Dogの特徴をコンソールに出力
 		Dog.temperature();
-		Dog.dogBreedCheck("ねこ", 10);
+
+		// 大型小型犬の判定を行い、コンソールに出力
+		Dog.dogBreedCheck(10);
 	}
 }
