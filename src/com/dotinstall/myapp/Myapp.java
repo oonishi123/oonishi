@@ -6,7 +6,7 @@ import com.dotinstall.myapp.model.User;
 public class Myapp{
 	public static void main(String[] args){
 		User tom;
-		tom = new User("Tom"); //コンストラクタに渡してあげる
+		tom = new User("Tom"); //コンストラクタに渡してあげるlllll
 		//tom = new User(); //オーバーライドできます
 		//System.out.println(tom.name); nameがプロテクトされているので参照できない
 		tom.sayHi();
